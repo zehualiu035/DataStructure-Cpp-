@@ -1,0 +1,34 @@
+Q1) BSTInt.o, BSTNodeInt.o, testBST.o, bst
+
+Q2) BSTInt.cpp: In function 'bool insert(int)':
+BSTInt.cpp:25:8: error: 'root' was not declared in this scope
+   if (!root) {
+        ^
+BSTInt.cpp:27:7: error: 'isize' was not declared in this scope
+     ++isize;
+       ^
+BSTInt.cpp:31:22: error: 'root' was not declared in this scope
+   BSTNodeInt* curr = root;
+                      ^
+BSTInt.cpp:56:5: error: 'isize' was not declared in this scope
+   ++isize;
+     ^
+make: *** [BSTInt.o] Error 1
+
+
+The error means the fields inside the method cannot be found, and this occurs because we deleted the class name, so the method is no longer found in the header file. 
+
+Q3) The bug was in the insert function. The while loop that found the node where the new node was going to be inserted beneath it was not finding the correct node. It was stopping too high up in the tree because of the && conditional.
+
+Q4) The original code was passing the test cases, so we first added a single number, 10, to be inserted into the tree last. This is when the test cases failed. We then traced the tree on paper to find the place where the failure was occuring. The node with data == 100 was being overwritten by the new node with data == 10, when it was supposed to be inserted below to the left of the 100. We decideed that there is a missing check within the first while loop that should be finding the level where the insertion will happen. 
+It was then clear that the while loop was being too selective, so we corrected the conditional and added a new check within the loop, rather than preventing from entering the while loop.
+
+Q5) For BST it's passed by reference. For BSTInt it's passed by value.
+
+//FINISH
+
+Q6) Sorted input files are taller.
+
+Q7) For sorted, I would expect the height to be (n-1). With 11,794 sorted input, the tree was built skewed and its height was 11,793, which is n-1.
+
+For random, there will be logarithmic height. 
