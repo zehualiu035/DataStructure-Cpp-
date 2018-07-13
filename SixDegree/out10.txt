@@ -1,0 +1,27 @@
+USER 2 does not have a common friend with USER 1
+USER 2 does not have a common friend with USER 3
+USER 3 does not have a common friend with USER 2
+USER 1 does not have a common friend with USER 3
+USER 3 does not have a common friend with USER 1
+USER 3 does not have a common friend with USER 7
+USER 7 does not have a common friend with USER 3
+USER 4 does not have a common friend with USER 5
+USER 5 does not have a common friend with USER 4
+USER 4 does not have a common friend with USER 6
+USER 6 does not have a common friend with USER 4
+USER 5 does not have a common friend with USER 6
+USER 6 does not have a common friend with USER 5
+USER 6 is already friends with USER 7
+USER 7 is already friends with USER 6
+USER 7 does not have a common friend with USER 8
+USER 8 does not have a common friend with USER 7
+USER 8 does not have a common friend with USER 9
+USER 9 does not have a common friend with USER 8
+USER 9 does not have a common friend with USER 10
+USER 10 does not have a common friend with USER 9
+USER 10 does not have a common friend with USER 11
+USER 11 does not have a common friend with USER 10
+USER 9 does not have a common friend with USER 11
+USER 11 does not have a common friend with USER 9
+USER 8 does not have a common friend with USER 12
+USER 12 does not have a common friend with USER 8

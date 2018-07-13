@@ -1,0 +1,7 @@
+Number of Actors: 8or 8
+Number of Movies: 11or 11
+Number of Edges: 23
+(actor)--[movie#@year]-->(actor)--...
+(A)--[ME2#@2011]-->(C)
+(A)--[ME2#@2011]-->(C)--[ME5#@2010]-->(G)
+(A)--[ME1#@2014]-->(B)

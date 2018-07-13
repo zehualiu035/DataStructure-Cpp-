@@ -1,0 +1,31 @@
+Mark Barnes, Zehua Liu
+3/12/17
+PA4
+
+1. The problem you solved: 
+Determining if two people are connected by a common friend.
+
+2. How you solved it: 
+We created a graph of vectors, where friends are connected by edges. In the situation
+that two people have a common friend and they are not friends, then we print out their common friend. If the two
+are not friends and do not have a common friend, then print out that they do no have common friends. If the two
+are already friends, then print that they are already identifiable as friends.  
+
+3. How you tested it: 
+We look at the facebook file and checked by hand what friends two nodes had in common. We then checked that
+it printed out that the two nodes had the same common friend together. If the friend was not listed in the printout, then this 
+indicated that the program did not work correctly. The program worked correctly when it printed out all the common friends that 
+two nodes shared together.
+
+4. How the grader should run your program (If this is not provided, you will receive a 0).
+0th arg: ./extension
+1st arg: run with either facebook_1000.txt, facebook_2000.txt, or facebook_ucsd.txt
+2nd arg: run with a pair file: small_test_graph.txt
+3rd arg: an output text file with the name of your choice
+example: ./extension facebook_1000.txt small_test_graph.txt out10.txt
+
+5. Provide a link to where we can download the entire data set in extension.txt. If you did some pre-processing to the data set, you must include that code as well in your submission and tell. You must clearly give all steps to get the data set and reproduce the results that you have provided.  DO NOT PUSH THE ENTIRE DATA SET TO GIT.
+
+The files are located: /home/linux/ieng6/cs100w/public/pa4/SocialNetworks
+
+These files can also be found at our Vocareum page for download.  
